@@ -40,6 +40,17 @@
              color : white;
            }
 
+
+           @media only screen and (max-width: 600px) {
+              .box {
+                   width:22rem;
+                   height:20rem;
+               }
+            }
+            .box {
+                 width:40rem;
+                 height:18rem;
+             }
     </style>
 
 
@@ -86,7 +97,7 @@
 
 
       <a href="{{ lin }}" style="color:black;" target="_blank" >
-      <div class="card border-secondary mb-3" style="width: 40rem; height: 15rem;">
+      <div class="card border-secondary mb-3 box" >
 
 
                      <b class="card-text" style="font-size:18px;">{{ value|linebreaks }}{{ new|safe }}</b>{{ value|linebreaks }} <p style="color: gray; font-size:14px; " > {{ des|safe }} </p> {{ value|linebreaks }}
